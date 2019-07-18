@@ -1,8 +1,12 @@
+#내가만든야구게임
+
 import random
 strike = 0
 ball = 0
 number = 0
 baseball = sorted(random.sample(range(1,10),3))
+
+
 print(baseball)
 
 
@@ -13,9 +17,9 @@ while strike!=3:
     i = list(input("3자리숫자를 입력하세요 : "))
     print(i)
     for a in range(3):
-        if int(i[a]) in baseball and int(i[a]) == baseball[0] :
+        if int(i[a]) in baseball and int(i[a]) == baseball[a] :
             strike +=1
-        elif int(i[a]) in baseball and int(i[a]) != baseball[0] :
+        elif int(i[a]) in baseball and int(i[a]) != baseball[a] :
             ball +=1   
         else:
             pass

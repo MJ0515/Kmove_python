@@ -1,3 +1,5 @@
+#야구게임 모범답안
+
 import random
 com = random.sample(range(1,10),3)
 print(com)
